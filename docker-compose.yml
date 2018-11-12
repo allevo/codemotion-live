@@ -1,0 +1,16 @@
+version: '3'
+services:
+  inventory:
+    environment:
+    - 'PORT=80'
+    - 'NAME=inventory'
+    image: backend:1-base-conf
+  rating:
+    environment:
+    - 'PORT=80'
+    - 'NAME=rating'
+    image: backend:1-base-conf
+  api-gateway:
+    image: api-gateway:1-base-conf
+    ports:
+     - "8080:80"
