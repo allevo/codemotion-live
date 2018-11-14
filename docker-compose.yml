@@ -10,6 +10,10 @@ services:
     - 'PORT=80'
     - 'NAME=rating'
     image: backend:1-base-conf
+  auth-service:
+    environment:
+    - 'PORT=80'
+    image: auth-service:codemotion
   api-gateway:
     image: api-gateway:1-base-conf
     ports:

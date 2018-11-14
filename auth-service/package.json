@@ -1,0 +1,21 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "fastify start --log-level ${LOG_LEVEL:-trace} --port ${PORT:-3000} index.js"
+  },
+  "keywords": [],
+  "author": "Allevi Tommaso <tomallevi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "fastify": "^1.13.0",
+    "fastify-cli": "^0.25.1",
+    "tiny-lru": "^1.6.1"
+  },
+  "dependencies": {
+    "fastify-cookie": "^2.1.0"
+  }
+}
